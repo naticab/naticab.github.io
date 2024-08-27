@@ -1,12 +1,21 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .box{
     border: 50px solid transparent;
     background-image: url(fotos/fondo.jpeg);
     margin-top: 0px;
-
+    padding: 20px;
 }
 body{
     font-family: initial;
     background-color:#ffedcd;
+    min-height: 100%;
+    flex-direction: column;
 }
 .container {
     /*div texto e imagen*/
@@ -14,6 +23,7 @@ body{
     align-items: center;
     justify-content: center;
     border: 35px solid transparent;
+    flex-grow: 1;
    
 }
 .information{
@@ -23,6 +33,7 @@ body{
     display: inline-block;
     text-align: justify;
     margin-left: 20px;
+    word-wrap: break-word;
 
 }
 #fotoPrincipal{
@@ -41,6 +52,7 @@ margin-left: 20px;
     margin-top: 0px;
     letter-spacing: 2px;
     text-align: center;
+    padding: 5px;  
 }
 h3{
     color: darkblue;
@@ -49,8 +61,12 @@ p{
     -webkit-text-fill-color: darkblue;
     font-size: 20px;
 }
-.footer{
+.pie-pagina{
     text-align: center;
+    width: 100%;
+    margin: auto;
+    position:relative;
+    padding: 45px 0px;
 }
 #footer1{
     font-size: 10px;
@@ -58,5 +74,4 @@ p{
 #sub2{
     font-size: 12px;
 }
-
 
